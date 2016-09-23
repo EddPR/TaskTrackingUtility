@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bignerdranch.android.tasktrackingutility.MainActivity"
+    android:background="#e0dcdc">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:weightSum="1"
+        android:gravity="center_vertical|bottom">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Timer"
+            android:id="@+id/tv_timer"
+            android:layout_weight="0.13"
+            android:background="#ffffff"
+            android:textColor="#dc5902"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sp_list"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.30"
+            android:background="#ffffff"
+            android:spinnerMode="dropdown" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Check Out"
+            android:id="@+id/btn_check_out"
+            android:layout_weight="0.08"
+            android:layout_gravity="center"
+            android:background="@android:drawable/btn_default"
+            android:backgroundTint="#fd4343"
+            android:backgroundTintMode="multiply"
+            android:visibility="gone" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Check In"
+            android:id="@+id/btn_check_in"
+            android:layout_gravity="center"
+            android:background="@android:drawable/btn_default"
+            android:backgroundTint="#64fb85"
+            android:layout_weight="0.08"
+            android:backgroundTintMode="multiply" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Log Data"
+            android:id="@+id/tv_log"
+            android:layout_weight="0.13"
+            android:background="#ffffff"
+            android:textColor="#dc5902"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="148dp"
+            android:id="@+id/sv_log"
+            android:layout_gravity="top|center_horizontal"
+            android:background="#ffffff"
+            android:fillViewport="false" >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:id="@+id/et_log" />
+
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
