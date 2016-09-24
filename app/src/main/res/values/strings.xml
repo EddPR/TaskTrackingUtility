@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">TaskTrackingUtility</string>
+    <string-array name="sp_items">
+        <item>Capstone</item>
+        <item>Systems II</item>
+        <item>Mobile Programming</item>
+        <item>Physics</item>
+        <item>Astronomy</item>
+        <item>Cyber Security</item>
+    </string-array>
 </resources>

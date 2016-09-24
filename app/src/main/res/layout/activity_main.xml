@@ -33,7 +33,8 @@
             android:layout_gravity="center_horizontal"
             android:layout_weight="0.30"
             android:background="#ffffff"
-            android:spinnerMode="dropdown" />
+            android:spinnerMode="dropdown"
+            android:entries="@array/sp_items" />
 
         <Button
             android:layout_width="match_parent"
@@ -45,7 +46,8 @@
             android:background="@android:drawable/btn_default"
             android:backgroundTint="#fd4343"
             android:backgroundTintMode="multiply"
-            android:visibility="gone" />
+            android:visibility="gone"
+            android:layout_marginBottom="10dp"/>
 
         <Button
             android:layout_width="match_parent"
@@ -56,7 +58,8 @@
             android:background="@android:drawable/btn_default"
             android:backgroundTint="#64fb85"
             android:layout_weight="0.08"
-            android:backgroundTintMode="multiply" />
+            android:backgroundTintMode="multiply"
+            android:layout_marginBottom="10dp"/>
     </LinearLayout>
 
     <LinearLayout
@@ -64,7 +67,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:weightSum="1">
+        android:weightSum="1"
+        >
 
         <TextView
             android:layout_width="match_parent"
@@ -76,7 +80,7 @@
             android:background="#ffffff"
             android:textColor="#dc5902"
             android:textStyle="bold"
-            android:layout_marginTop="10dp" />
+            />
 
         <ScrollView
             android:layout_width="match_parent"
@@ -93,5 +97,21 @@
                 android:id="@+id/et_log" />
 
         </ScrollView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Total"
+            android:id="@+id/tv_total"
+            android:layout_weight="0.13"
+            android:background="#ffffff"
+            android:textColor="#dc5902"
+            android:textStyle="bold"
+            android:gravity="right"
+            android:paddingEnd="30dp"
+            android:paddingRight="30dp"/>
+
     </LinearLayout>
+
 </LinearLayout>
